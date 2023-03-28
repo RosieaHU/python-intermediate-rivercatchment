@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Checkout Repository
-       uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
       - name: Set up Python 3.10
         usees: action/setup-python@v2
@@ -26,4 +26,3 @@ jobs:
       - name: Test with PyTest
         run:
           python -m pytest --cov=catchment.models tests/test_modeld.py
-        
